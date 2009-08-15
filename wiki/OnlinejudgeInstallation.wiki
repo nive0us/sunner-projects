@@ -1,0 +1,40 @@
+#summary Installation of onlinejudge for moodle
+#labels Featured,Phase-Deploy
+
+= 预准备 =
+
+编辑mod/assignment/mod_form.php，将：
+{{{
+$assignmentinstance->setup_elements($mform);
+}}}
+改为
+{{{
+$assignmentinstance->setup_elements($mform, $this);
+}}}
+
+编辑mod/assignment/settings.php，在文件末尾的“?>”之前插入如下代码：
+{{{
+//**** Sunner: So the settings of assignment types can appear in global settings.
+if ($plugins = get_list_of_plugins('mod/assignment/type')) {
+    foreach ($plugins as $plugin) {
+        $file = "$CFG->dirroot/mod/assignment/type/$plugin/settings.php";
+        if (file_exists($file))
+            require($file);
+    }
+}
+//**** end
+}}}
+
+= 下载代码 =
+
+将整个onlinejudge目录代码放到mod/assignment/type目录下
+
+= 编译sandbox =
+
+进入mod/assignment/type/onlinejudge/sandbox目录，执行命令：
+{{{
+make
+}}}
+
+= 安装 =
+用管理员帐号登录moodle，根据提示安装。
