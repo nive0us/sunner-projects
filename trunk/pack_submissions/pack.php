@@ -114,7 +114,7 @@ $UNRAR_PATH = "/usr/bin/unrar";
                 if ($ext === 'rar' && !empty($UNRAR_PATH)) {
                     $command = $UNRAR_PATH.' x '.$source.$file.' '.$temp_dest.'/ >/dev/null';
                     system($command);
-                } else if ($ext === 'rar') {
+                } else if ($ext === 'zip') {
                     unzip_file($source.$file, $temp_dest, false);
                     //Move all files to its home root
                     $basedir = $temp_dest.'/';
