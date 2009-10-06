@@ -116,13 +116,6 @@ $UNRAR_PATH = "/usr/bin/unrar";
                     system($command);
                 } else if ($ext === 'zip') {
                     unzip_file($source.$file, $temp_dest, false);
-                    //Move all files to its home root
-                    $basedir = $temp_dest.'/';
-                    if ($fs = get_directory_list($basedir)) {
-                        foreach ($fs as $k => $f) {
-                            rename($basedir.$f, $basedir.basename($f));
-                        }
-                    }
                 } else {
                     if (!copy($source.$file, $temp_dest.basename($file)))
                         error('Can\'t copy file');
