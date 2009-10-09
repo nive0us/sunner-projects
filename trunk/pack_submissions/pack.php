@@ -1,7 +1,7 @@
 <?php  // $Id: submissions.php,v 1.43 2006/08/28 08:42:30 toyomoyo Exp $
 
-$RAR_PATH = "/usr/bin/rar";
-$UNRAR_PATH = "/usr/bin/unrar";
+$RAR_PATH = '/usr/bin/rar';
+$UNRAR_PATH = '/usr/bin/unrar';
 
     require_once("../../config.php");
     require_once("lib.php");
@@ -101,7 +101,7 @@ $UNRAR_PATH = "/usr/bin/unrar";
             echo '整理文件';
             foreach ($files as $key => $file) {
                 //TODO fullname as dir name
-                $userid = dirname($file);
+                $userid = substr($file, 0, strspn($file, '1234567890'));
                 $user = get_record_select('user', "id = $userid", 'lastname, firstname, idnumber');
                 $temp_dest = $temp_dir . fullname($user). "[$userid]/";
                 if (!check_dir_exists($temp_dest, true, true)) {
@@ -112,7 +112,8 @@ $UNRAR_PATH = "/usr/bin/unrar";
                 $ext= $path_parts["extension"];    //The extension of the file
 
                 if ($ext === 'rar' && !empty($UNRAR_PATH)) {
-                    $command = $UNRAR_PATH.' x '.$source.$file.' '.$temp_dest.'/ >/dev/null';
+                    $command = "export LC_ALL=zh_CN.UTF-8 ; $UNRAR_PATH x $source$file $temp_dest >/dev/null";
+                    echo $command;
                     system($command);
                 } else if ($ext === 'zip') {
                     unzip_file($source.$file, $temp_dest, false);
@@ -159,8 +160,10 @@ $UNRAR_PATH = "/usr/bin/unrar";
         }
 
         // Clean temp dirs and files
-        delete_dir_contents($temp_dir);
-        rmdir($temp_dir);
+        if (!debugging('', DEBUG_DEVELOPER)) {
+            delete_dir_contents($temp_dir);
+            rmdir($temp_dir);
+        }
     }
     echo '下载请到：';
     echo "<a href=\"$CFG->wwwroot/files/index.php?id=$course->id&amp;wdir=//packed_submissions\"><img src=\"$CFG->pixpath/f/folder.gif\" class=\"icon\" />&nbsp;".htmlspecialchars('packed_submissions')."</a>";
