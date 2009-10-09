@@ -113,7 +113,6 @@ $UNRAR_PATH = '/usr/bin/unrar';
 
                 if ($ext === 'rar' && !empty($UNRAR_PATH)) {
                     $command = "export LC_ALL=zh_CN.UTF-8 ; $UNRAR_PATH x $source$file $temp_dest >/dev/null";
-                    echo $command;
                     system($command);
                 } else if ($ext === 'zip') {
                     unzip_file($source.$file, $temp_dest, false);
