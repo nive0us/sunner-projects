@@ -1,9 +1,10 @@
 <?php  // $Id: submissions.php,v 1.43 2006/08/28 08:42:30 toyomoyo Exp $
 
-$RAR_PATH = '/usr/bin/rar';
-$UNRAR_PATH = '/usr/bin/unrar';
+define('RAR_PATH', '/usr/bin/rar');
+define('UNRAR_PATH', '/usr/bin/unrar');
 
     require_once("../../config.php");
+    require_once("../../lib/filelib.php");
     require_once("lib.php");
 
     $id   = optional_param('id', 0, PARAM_INT);          // Course module ID
@@ -136,7 +137,7 @@ $UNRAR_PATH = '/usr/bin/unrar';
                     foreach ($users as $user) {
                         $dirs[] = fullname($user). "[$user->id]/";
                     }
-                    $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; $RAR_PATH a $target$group->name.rar " . implode(' ', $dirs) . ' >/dev/null ' ;
+                    $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a $target$group->name.rar " . implode(' ', $dirs) . ' >/dev/null ' ;
                     $command = quotemeta($command);
                     system($command);
                     if (file_exists("$target$group->name.rar"))
@@ -147,7 +148,7 @@ $UNRAR_PATH = '/usr/bin/unrar';
                 flush();
             }
         } else { //Pack all
-            $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; $RAR_PATH a $target$assignment->name.rar" ;
+            $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a $target$assignment->name.rar" ;
             $command = quotemeta($command) . ' * >/dev/null';
             system($command);
             if (file_exists("$target$assignment->name.rar"))
