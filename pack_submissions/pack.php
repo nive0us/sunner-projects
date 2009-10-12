@@ -90,8 +90,7 @@ $UNRAR_PATH = '/usr/bin/unrar';
 
         // Make temp dir
         $temp_dir = $CFG->dataroot.'/temp/packass/'.$id.'/';
-        require_once('../../backup/lib.php'); //for delete_dir_contents()
-        delete_dir_contents($temp_dir);
+        fulldelete($temp_dir);
         if (!check_dir_exists($temp_dir, true, true)) {
             error("Can't mkdir ".$temp_dir);
         }
@@ -160,8 +159,7 @@ $UNRAR_PATH = '/usr/bin/unrar';
 
         // Clean temp dirs and files
         if (!debugging('', DEBUG_DEVELOPER)) {
-            delete_dir_contents($temp_dir);
-            rmdir($temp_dir);
+            fulldelete($temp_dir);
         }
     }
     echo '下载请到：';
