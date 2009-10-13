@@ -46,7 +46,8 @@ define('UNRAR_PATH', '/usr/bin/unrar');
     require_capability('mod/assignment:grade', get_context_instance(CONTEXT_MODULE, $cm->id));
 
     //Mkdir to store packages.
-    $target = "$CFG->dataroot/$course->id/packed_submissions/$assignment->name/";
+    $assname = clean_filename($assignment->name);
+    $target = "$CFG->dataroot/$course->id/packed_submissions/$assname/";
     if (!check_dir_exists($target, true, true)) {
         error("Can't mkdir ".$target);
     }
@@ -58,7 +59,7 @@ define('UNRAR_PATH', '/usr/bin/unrar');
     $packall = false;   //Pack all submissions into one archive.
     $packed = false;
     if (!$groups) {
-        if (file_exists($target . $assignment->name . '.rar')) {
+        if (file_exists($target . $assname . '.rar')) {
             echo '作业已经打包过了。<br />';
             $packed = true;
         } else {
@@ -148,10 +149,10 @@ define('UNRAR_PATH', '/usr/bin/unrar');
                 flush();
             }
         } else { //Pack all
-            $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a $target$assignment->name.rar" ;
+            $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a $target$assname.rar" ;
             $command = quotemeta($command) . ' * >/dev/null';
             system($command);
-            if (file_exists("$target$assignment->name.rar"))
+            if (file_exists("$target$assname.rar"))
                 echo '作业“'.$assignment->name.'”打包成功。<br />';
             else
                 echo '作业“'.$assignment->name.'”打包失败。<br />';
