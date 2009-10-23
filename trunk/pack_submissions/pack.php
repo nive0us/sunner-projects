@@ -100,12 +100,12 @@ define('RAR_PATH', '/usr/bin/rar');
         echo '整理文件...';
         flush();
         recurse_copy($source, $temp_dir);
-        if ($dh = opendir($temp_dir)) {
+        if ($dh = opendir($source)) {
             while (($file = readdir($dh)) !== false) {
                 if ($file != '.' && $file != '..' && is_dir($temp_dir.$file)) {
                     $user = get_record_select('user', "id = $file", 'lastname, firstname, idnumber');
                     $dest = $temp_dir . fullname($user). "[$file]";
-                    if (!rename($source.$file, $dest)) {
+                    if (!rename($temp_dir.$file, $dest)) {
                         error("Can't rename to ".$dest);
                     }
                 }
