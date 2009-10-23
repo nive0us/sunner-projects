@@ -105,7 +105,6 @@ define('RAR_PATH', '/usr/bin/rar');
                 if ($file != '.' && $file != '..' && is_dir($temp_dir.$file)) {
                     $user = get_record_select('user', "id = $file", 'lastname, firstname, idnumber');
                     $dest = $temp_dir . fullname($user). "[$file]";
-                    echo "renmae $source.$file to $dest";
                     if (!rename($source.$file, $dest)) {
                         error("Can't rename to ".$dest);
                     }
