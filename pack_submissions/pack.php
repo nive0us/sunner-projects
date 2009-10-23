@@ -1,7 +1,6 @@
 <?php  // $Id: submissions.php,v 1.43 2006/08/28 08:42:30 toyomoyo Exp $
 
 define('RAR_PATH', '/usr/bin/rar');
-define('UNRAR_PATH', '/usr/bin/unrar');
 
     require_once("../../config.php");
     require_once("../../lib/filelib.php");
@@ -94,37 +93,27 @@ define('UNRAR_PATH', '/usr/bin/unrar');
         $temp_dir = $CFG->dataroot.'/temp/packass/'.$id.'/';
         fulldelete($temp_dir);
         if (!check_dir_exists($temp_dir, true, true)) {
-            error("Can't mkdir ".$temp_dir);
+            error("Can't mkdir $temp_dir");
         }
 
         //Copy submisstions to temp dir
-        if ($files = get_directory_list($source)) {
-            echo '整理文件';
-            foreach ($files as $key => $file) {
-                //TODO fullname as dir name
-                $userid = substr($file, 0, strspn($file, '1234567890'));
-                $user = get_record_select('user', "id = $userid", 'lastname, firstname, idnumber');
-                $temp_dest = $temp_dir . fullname($user). "[$userid]/";
-                if (!check_dir_exists($temp_dest, true, true)) {
-                    error("Can't mkdir ".$temp_dest);
+        echo '整理文件...';
+        flush();
+        recurse_copy($source, $temp_dir);
+        if ($dh = opendir($temp_dir)) {
+            while (($file = readdir($dh)) !== false) {
+                if ($file != '.' && $file != '..' && is_dir($temp_dir.$file)) {
+                    $user = get_record_select('user', "id = $file", 'lastname, firstname, idnumber');
+                    $dest = $temp_dir . fullname($user). "[$file]";
+                    echo "renmae $source.$file to $dest";
+                    if (!rename($source.$file, $dest)) {
+                        error("Can't rename to ".$dest);
+                    }
                 }
-
-                $path_parts = pathinfo(cleardoubleslashes($file));
-                $ext= $path_parts["extension"];    //The extension of the file
-
-                if ($ext === 'rar' && !empty($UNRAR_PATH)) {
-                    $command = "export LC_ALL=$CFG->locale ; $UNRAR_PATH x $source$file $temp_dest >/dev/null";
-                    system($command);
-                } else if ($ext === 'zip') {
-                    unzip_file($source.$file, $temp_dest, false);
-                } else {
-                    if (!copy($source.$file, $temp_dest.basename($file)))
-                        error('Can\'t copy file');
-                }
-
-                echo '.';
-                flush();
             }
+            closedir($dh);
+        } else {
+            error("Can't open $temp_dir");
         }
 
         //Pack now!
@@ -136,17 +125,23 @@ define('UNRAR_PATH', '/usr/bin/unrar');
                 $users = groups_get_members($group->id, 'u.id, u.firstname, u.lastname, u.idnumber');
                 if ($users) {
                     foreach ($users as $user) {
-                        $dirs[] = fullname($user). "[$user->id]/";
+                        $dirname = fullname($user). "[$user->id]/";
+                        if (is_dir($temp_dir.$dirname))
+                            $dirs[] = $dirname;
                     }
-                    $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a $target$group->name.rar " . implode(' ', $dirs) . ' >/dev/null ' ;
-                    $command = quotemeta($command);
-                    system($command);
-                    if (file_exists("$target$group->name.rar"))
-                        echo '小组“'.$group->name.'”打包成功。<br />';
-                    else
-                        echo '小组“'.$group->name.'”打包失败。<br />';
+                    if (count($dirs) != 0) {
+                        $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a $target$group->name.rar " . implode(' ', $dirs) . ' >/dev/null ' ;
+                        $command = quotemeta($command);
+                        system($command);
+                        if (file_exists("$target$group->name.rar"))
+                            echo '小组“'.$group->name.'”打包成功。<br />';
+                        else
+                            echo '小组“'.$group->name.'”打包失败。<br />';
+                    } else {
+                        echo '小组“'.$group->name.'”没有人提交作业。<br />';
+                    }
+                    flush();
                 }
-                flush();
             }
         } else { //Pack all
             $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a $target$assname.rar" ;
@@ -156,7 +151,6 @@ define('UNRAR_PATH', '/usr/bin/unrar');
                 echo '作业“'.$assignment->name.'”打包成功。<br />';
             else
                 echo '作业“'.$assignment->name.'”打包失败。<br />';
-
         }
 
         // Clean temp dirs and files
@@ -170,4 +164,20 @@ define('UNRAR_PATH', '/usr/bin/unrar');
     print_box_end();
     print_footer($course);
 
+    //Copy the function from internet
+    function recurse_copy($src,$dst) {
+        $dir = opendir($src);
+        @mkdir($dst);
+        while(false !== ( $file = readdir($dir)) ) {
+            if (( $file != '.' ) && ( $file != '..' )) {
+                if ( is_dir($src . '/' . $file) ) {
+                    recurse_copy($src . '/' . $file,$dst . '/' . $file);
+                }
+                else {
+                    copy($src . '/' . $file,$dst . '/' . $file);
+                }
+            }
+        }
+        closedir($dir);
+    } 
 ?>
