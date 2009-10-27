@@ -108,6 +108,22 @@ define('RAR_PATH', '/usr/bin/rar');
                     if (!rename($temp_dir.$file, $dest)) {
                         error("Can't rename to ".$dest);
                     }
+                    // extract teacher's comment and grade from db
+                    $submission = get_record('assignment_submissions', 'assignment', $assignment->id, 'userid', $file);
+                    if ($submission->timemarked != 0) {
+                        $dest .= '/feedback';
+                        mkdir($dest);
+
+                        $content = "<html>\n<body>\n";
+                        $content .= "<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head>";
+                        $teacher = get_record_select('user', "id = $submission->teacher", 'lastname, firstname');
+                        $content .= fullname($teacher).'在'.userdate($submission->timemarked).'将此作业评分为 ';
+                        $content .= "<strong>$submission->grade</strong>分。评注如下：</ br></ br>\n";
+                        $content .= "<div>\n$submission->submissioncomment\n</div>";
+                        $content .= "\n</body>\n</html>\n";
+
+                        file_put_contents($dest.'/feedback.html', $content);
+                    }
                 }
             }
             closedir($dh);
@@ -129,7 +145,7 @@ define('RAR_PATH', '/usr/bin/rar');
                             $dirs[] = $dirname;
                     }
                     if (count($dirs) != 0) {
-                        $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a $target$group->name.rar " . implode(' ', $dirs) . ' >/dev/null ' ;
+                        $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a -r $target$group->name.rar " . implode(' ', $dirs) . ' >/dev/null ' ;
                         $command = quotemeta($command);
                         system($command);
                         if (file_exists("$target$group->name.rar"))
