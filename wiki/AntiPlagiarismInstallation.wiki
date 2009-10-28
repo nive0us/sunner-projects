@@ -1,0 +1,23 @@
+#summary Installation of anti_plagiarism block for moodle
+#labels Featured,anti-plagiarism
+
+= DOWNLOAD =
+
+Download from http://code.google.com/p/sunner-projects/downloads/list
+
+= Installation =
+
+  # Untar downloaded file and put anti_plagiarism/ into MOODLE_HOME/blocks/
+  # Login moodle as admin
+  # Access http://site.domain.name/admin/index.php
+  # Follow the instructions shown by above url 
+
+= Configure =
+
+Follow [http://theory.stanford.edu/~aiken/moss/ MOSS's instruction] to get the submission script. Make sure it is runnable and works. Input it's path to moodle's admin->Modules->Blocks->Anti-Plagiarism.
+
+使用duplication的用户需要联系car at hit.edu.cn获取软件，然后将执行路径也输入到这个配置里。
+
+= Usage =
+
+The same as other standard blocks.
