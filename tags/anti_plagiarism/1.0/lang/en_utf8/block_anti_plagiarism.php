@@ -1,0 +1,48 @@
+<?PHP // $Id$ 
+
+$string['anti_plagiarism:confirm'] = 'Confirm plagiarism manually';
+$string['anti_plagiarism:judge'] = 'Launch judger';
+$string['anti_plagiarism:viewall'] = 'View all plagiarism records';
+$string['anti_plagiarism:viewself'] = 'View own plagiarism records';
+$string['basefile'] = 'Base file';
+$string['blockname'] = 'Anti-Plagiarism';
+$string['confirmmessage'] = 'Are you sure this is plagiarism?';
+$string['confirmtooltip'] = 'Confirm this plagiarism';
+$string['connecterror'] = 'Can\'t access $a';
+$string['describecleanall'] = 'Clean all existing unconfirmed results';
+$string['describeextnames'] = 'Extension names of files to judge (seperated by space)';
+$string['describejudger'] = 'Choose judger';
+$string['describesensitivity'] = 'Sensitivity';
+$string['describetype'] = 'Choose programming language';
+$string['done'] = 'done.';
+$string['duplication'] = 'Duplication (for doc and pdf in Chinese)';
+$string['duplicationinfo'] = 'Similarity of <a href=\"$a->url1\">$a->filename1</a> and <a href=\"$a->url1\">$a->filename1</a> is $a->similarity';
+$string['duplicationpath'] = 'Local path of the Duplication.';
+$string['extnames'] = 'Extension';
+$string['failed'] = 'Unsuccessfully run the external judger!';
+$string['judge'] = 'Judge';
+$string['hasplagiarism'] = 'You have $a records';
+$string['info'] = 'Information';
+$string['moss'] = 'Moss (for source code and ASCII text)';
+$string['mosscheckfiles'] = 'Check files...';
+$string['mossdownloadresults'] = 'Download results...';
+$string['mossinfo'] = '<a href=\"{$a->url}\">User 1({$a->user1_percent}%%) and User 2({$a->user2_percent}%%) have {$a->line_count} matching lines</a>'; 
+$string['mossjudge'] = 'Judge...';
+$string['mossoptions'] = 'Moss Options';
+$string['mossscriptpath'] = 'Local path of the <a href=http://theory.stanford.edu/~aiken/moss/>moss</a> submission script.';
+$string['mossuploadfiles'] = 'Upload files...';
+$string['noassignments'] = 'No assignments to be measured';
+$string['noplagiarism'] = 'Anti-plagiarism is watching all assignments. No records related with you';
+$string['noresults'] = 'No judgement results. That means no plagiarism or the assignment is unjudged.';
+$string['noresultsandwait'] = 'No judgement results now. Please wait.';
+$string['numberofplagiarism'] = 'Found $a suspected plagiarism records.';
+$string['prepareing'] = 'Prepareing files...';
+$string['rank'] = 'Similarity Rank';
+$string['showall'] = 'Show all';
+$string['showalltooltip'] = 'Show all records';
+$string['showrelevantonly'] = 'Relevant';
+$string['showrelevanttooltip'] = 'Show records relevant with this only';
+$string['unconfirm'] = 'Unconfirm';
+$string['unconfirmtooltip'] = 'This is NOT plagiarism';
+$string['unrarpath'] = 'Local path of unrar.';
+?>
