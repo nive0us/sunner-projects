@@ -25,9 +25,9 @@ make
 
 = Installation =
 
-#Login moodle as admin
-#Access http://site.domain.name/admin/index.php
-#Follow the instructions shown by above url 
+ #Login moodle as admin
+ #Access http://site.domain.name/admin/index.php
+ #Follow the instructions shown by above url 
 
 = Usage =
 
