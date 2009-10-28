@@ -1,0 +1,36 @@
+#summary Installation of onlinejudge assignment type for moodle
+#labels Featured,OnlineJudge
+
+= PREPARE =
+
+Edit mod/assignment/mod_form.php. Change
+{{{
+$assignmentinstance->setup_elements($mform);
+}}}
+to
+{{{
+$assignmentinstance->setup_elements($mform, $this);
+}}}
+
+= DOWNLOAD =
+
+Download from http://code.google.com/p/sunner-projects/downloads/list
+
+Untar and put onlinejudge/ into mod/assignment/type/
+
+= MAKE sandbox =
+
+In mod/assignment/type/onlinejudge/sandbox/, run:
+{{{
+make
+}}}
+
+= Installation =
+
+  # Login moodle as admin
+  # Access http://site.domain.name/admin/index.php
+  # Follow the instructions shown by above url 
+
+= Usage =
+
+The same as other standard assignment types.
