@@ -1,7 +1,7 @@
 #summary Installation of onlinejudge assignment type for moodle
 #labels Featured,Phase-Deploy,onlinejudge
 
-= prepare =
+= PREPARE =
 
 Edit mod/assignment/mod_form.php. Change
 {{{
@@ -17,7 +17,7 @@ $assignmentinstance->setup_elements($mform, $this);
 Download from http://code.google.com/p/sunner-projects/downloads/list
 Untar and put onlinejudge into mod/assignment/type/
 
-= make sandbox =
+= MAKE sandbox =
 
 In mod/assignment/type/onlinejudge/sandbox/, run:
 {{{
