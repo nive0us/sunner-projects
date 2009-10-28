@@ -12,9 +12,10 @@ to
 $assignmentinstance->setup_elements($mform, $this);
 }}}
 
-= download =
+= DOWNLOAD =
 
-Put onlinejudge into mod/assignment/type/
+Download from http://code.google.com/p/sunner-projects/downloads/list
+Untar and put onlinejudge into mod/assignment/type/
 
 = make sandbox =
 
