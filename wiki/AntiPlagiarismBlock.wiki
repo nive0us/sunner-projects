@@ -14,3 +14,7 @@ This plugin works as a block. It can detect cheating in programming assignments.
   * Use different parameters to detect the same assignment and merge results
   * Confirm manually by teacher
   * Students can see their own confirmed results only
+
+= How to get =
+
+See AntiPlagiarismInstallation
