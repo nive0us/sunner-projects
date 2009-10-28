@@ -1,0 +1,21 @@
+#summary Features of Online Judge Assignment Type
+#labels Featured,OnlineJudge
+
+= Introduction =
+
+This plugin is designed for courses involving programming. It can automatically grade programming assignments.
+
+Now, it supports C/C++ and works in Linux only.
+
+= Features = 
+
+The plugin inherents from uploadsingle assignment type. So it gets all its functions and has additional features such as:
+
+  * Judge in several minutes after submitting.
+  * Support multiply test cases.
+  * Grade test cases separately. For example, there are four cases and max grade of each is 25. If one student pass three of them, he can get 75.
+  * Teacher defined feedback/hint can be shown if someone doesn't pass the test.
+  * Compile only mode.
+  * Resubmit support. Allow to turn off.
+  * More details (output and etc.) to teachers.
+  * Highlight code preview
