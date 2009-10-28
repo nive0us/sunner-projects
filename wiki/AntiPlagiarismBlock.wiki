@@ -1,5 +1,5 @@
 #summary Anti-plagiarism for moodle's assignment
-#labels anti-plagiarism
+#labels anti-plagiarism,Featured
 
 = Introduction =
 
