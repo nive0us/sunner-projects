@@ -23,3 +23,10 @@ The plugin inherents from uploadsingle assignment type. So it gets all its funct
 = How to get =
 
 See OnlineJudgeInstallation
+
+= TODO =
+
+  * Backup and restore. Now it can't backup the test cases and judge results
+  * Java and more languages support
+  * Better test case management UI
+  * Code clean-up
