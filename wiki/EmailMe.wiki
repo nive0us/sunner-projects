@@ -1,6 +1,6 @@
 #summary How to get update notification
 
-If you like these plugins, please send me an email. Then you can get notification of updates. It is better to include the following information in the email:
+If you like these plugins, please send me an email. Then you can get notification of updates. I appreciate if you include the following information in the email:
 
   * Your Name
   * Name of your university/collage/institute/company
