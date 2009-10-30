@@ -14,7 +14,7 @@ Download from http://code.google.com/p/sunner-projects/downloads/list
 
 = Configure =
 
-Follow [http://theory.stanford.edu/~aiken/moss/ MOSS's instruction] to get the submission script. Make sure it is runnable and works. Input it's path to moodle's admin->Modules->Blocks->Anti-Plagiarism.
+Follow [http://theory.stanford.edu/~aiken/moss/ MOSS's instruction] to get the submission script and free account (the registration email must be sent in *plain text* format). Make sure it is runnable and works. Input it's path to moodle's admin->Modules->Blocks->Anti-Plagiarism.
 
 使用duplication的用户需要联系car at hit.edu.cn获取软件，然后将执行路径也输入到这个配置里。
 
