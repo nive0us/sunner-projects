@@ -3,9 +3,9 @@
 
 = Introduction =
 
-This plugin is designed for courses involving programming. It can automatically grade programming assignments. Use [http://sourceforge.net/projects/libsandbox/ libsandbox] to filter malicious program. 
+This plugin is designed for courses involving programming assignments. It can automatically grade programming assignments. Use [http://sourceforge.net/projects/libsandbox/ libsandbox] to filter malicious program. 
 
-Now, it supports C/C++ and works in Linux only.
+Now, it supports C/C++ and works for moodle 1.9.x in Linux only. 
 
 = Features = 
 
