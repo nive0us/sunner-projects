@@ -19,6 +19,8 @@ The plugin inherents from uploadsingle assignment type. So it gets all its funct
   * Resubmit support. Allow to turn off.
   * More details (output and etc.) to teachers.
   * Highlight code preview
+  * Translation: English and Simplified Chinese
+
 
 = How to get =
 
