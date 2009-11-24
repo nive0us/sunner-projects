@@ -1,10 +1,11 @@
-#labels Featured,anti-plagiarism
-
 #summary Anti-plagiarism for moodle's assignment
+#labels Featured,anti-plagiarism
 
 = Introduction =
 
 This plugin works as a block. It can detect cheating in programming assignments. Also support html and plain text files. The core engine is [http://theory.stanford.edu/~aiken/moss/ MOSS].
+
+It works in both Linux and Windows (cygwin with perl required).
 
 中文用户还可以使用duplication做为评判核心，支持doc、pdf和txt文件的中文文本雷同检测。
 
