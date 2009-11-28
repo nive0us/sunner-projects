@@ -142,11 +142,10 @@ define('RAR_PATH', '/usr/bin/rar');
                     foreach ($users as $user) {
                         $dirname = fullname($user). "[$user->id]/";
                         if (is_dir($temp_dir.$dirname))
-                            $dirs[] = $dirname;
+                            $dirs[] = addcslashes($dirname, ' ()[]');
                     }
                     if (count($dirs) != 0) {
-                        $command = "export LC_ALL=zh_CN.UTF-8 ; cd $temp_dir ; ".RAR_PATH." a -r $target$group->name.rar " . implode(' ', $dirs) . ' >/dev/null ' ;
-                        $command = quotemeta($command);
+                        $command = "export LC_ALL=zh_CN.UTF-8 ; cd \"$temp_dir\" ; \"".RAR_PATH."\" a -r \"$target$group->name.rar\" " . implode(' ', $dirs) . ' >/dev/null ' ;
                         system($command);
                         if (file_exists("$target$group->name.rar"))
                             echo '小组“'.$group->name.'”打包成功。<br />';
