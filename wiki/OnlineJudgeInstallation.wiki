@@ -33,4 +33,6 @@ make
 
 = Usage =
 
-The same as other standard assignment types.
+The same as other standard assignment types. Follow its inline help.
+
+*Make sure the cron of moodle works*
