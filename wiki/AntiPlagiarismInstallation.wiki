@@ -20,4 +20,8 @@ Follow [http://theory.stanford.edu/~aiken/moss/ MOSS's instruction] to get the s
 
 = Usage =
 
-The same as other standard blocks.
+Add an instance as other standard blocks in your course page and click the assignment name (if any) in the block.
+
+== Debug ==
+
+Login as admin. Go to "site administration->server->debugging", set "debug messages" as "DEVELOPER", and enable "Display debug message". The block will output more details about its execution. Use these info to debug external script problem.
