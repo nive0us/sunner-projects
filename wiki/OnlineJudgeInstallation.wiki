@@ -35,4 +35,4 @@ make
 
 The same as other standard assignment types. Follow its inline help.
 
-*Make sure the [cron http://docs.moodle.org/en/Cron] of moodle works*
+*Make sure the [http://docs.moodle.org/en/Cron cron] of moodle works*
