@@ -17,8 +17,10 @@ Download from http://code.google.com/p/sunner-projects/downloads/list
 Follow [http://theory.stanford.edu/~aiken/moss/ MOSS's instruction] to get the submission script and free account (the registration email must be sent in *plain text* format). Make sure it is runnable and works. Input it's path to moodle's admin->Modules->Blocks->Anti-Plagiarism.
 
 * For Chinese users only: *
+
 moss脚本会检查源代码是否是文本，并把中文当作非文本。所以，需要打补丁。方法是在脚本中搜索"not a text file"，共两处。把这两行代码都注释掉。
-使用duplication的用户需要联系car at hit.edu.cn获取软件，然后将执行路径也输入到这个配置里。
+
+想使用duplication的用户请联系Car([http://ir.hit.edu.cn/~car/])获取软件。
 
 = Usage =
 
