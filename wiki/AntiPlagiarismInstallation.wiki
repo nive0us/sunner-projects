@@ -20,7 +20,7 @@ Follow [http://theory.stanford.edu/~aiken/moss/ MOSS's instruction] to get the s
 
 moss脚本会检查源代码是否是文本，并把中文当作非文本。所以，需要打补丁。方法是在脚本中搜索"not a text file"，共两处。把这两行代码都注释掉。
 
-想使用duplication的用户请联系Car([http://ir.hit.edu.cn/~car/])获取软件。
+想了解或使用duplication的用户请联系Car([http://ir.hit.edu.cn/~car/])。
 
 = Usage =
 
