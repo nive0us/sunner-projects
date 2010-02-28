@@ -24,7 +24,7 @@ moss脚本会检查源代码是否是文本，并把中文当作非文本。所�
 
 = Usage =
 
-Add an instance as other standard blocks in your course page and click the assignment name (if any) in the block.
+Add an instance as other standard blocks in your course page and click the assignment name (if any) in the block. Follow the interface to find plagiarism in selected assignment. If you have any question about the interface, just click the question mark icon and read the inline help.
 
 == Debug ==
 
