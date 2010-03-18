@@ -38,7 +38,7 @@ Finally, Go to moodle's admin->Modules->Blocks->Anti-Plagiarism and Input the fu
 
 moss脚本会检查源代码是否是文本，并把中文当作非文本，从而使提交失败。所以，需要打补丁。方法是在脚本中搜索"not a text file"，共两处。把这两行代码都注释掉。
 
-想了解或使用duplication的用户请联系Car([http://ir.hit.edu.cn/~car/])。
+Duplication是一个中文报告抄袭检测引擎，想了解或使用它的用户请联系Car([http://ir.hit.edu.cn/~car/])。
 
 = Usage =
 
