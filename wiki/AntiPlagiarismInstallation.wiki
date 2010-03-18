@@ -3,7 +3,6 @@
 
 = Requirement =
   * Moodle 1.9.x
-  * allow_url_fopen enabled php
   * perl in Linux or cygwin in Windows
 
 = DOWNLOAD =
