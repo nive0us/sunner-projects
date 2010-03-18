@@ -1,6 +1,11 @@
 #summary Installation of anti_plagiarism block for moodle
 #labels Featured,anti-plagiarism
 
+= Requirement =
+* Moodle 1.9.x
+* allow_url_fopen enabled php
+* perl in Linux or cygwin in Windows
+
 = DOWNLOAD =
 
 Download from http://code.google.com/p/sunner-projects/downloads/list
@@ -40,6 +45,6 @@ moss脚本会检查源代码是否是文本，并把中文当作非文本，从�
 
 Add an instance as other standard blocks in your course page and click the assignment name (if any) in the block. Follow the interface to find plagiarism in selected assignment. If you have any question about the interface, just click the question mark icon and read the inline help.
 
-== Debug ==
+= Debug =
 
 Login as admin. Go to "site administration->server->debugging", set "debug messages" as "DEVELOPER", and enable "Display debug message". The block will output more details about its execution. Use these info to debug external script problem.
