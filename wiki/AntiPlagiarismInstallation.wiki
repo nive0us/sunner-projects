@@ -42,7 +42,7 @@ Duplication是一个中文报告抄袭检测引擎，想了解或使用它的用
 
 = Usage =
 
-Add an instance as other standard blocks in your course page and click the assignment name (if any) in the block. Follow the interface to find plagiarism in selected assignment. If you have any question about the interface, just click the question mark icon and read the inline help.
+Add an instance of this block in your course page and click the assignment name (if any) in it. Follow the interface to trigger MOSS and judge plagiarism. If you have any question about the interface, just click the question mark icon and read the inline help.
 
 = Debug =
 
