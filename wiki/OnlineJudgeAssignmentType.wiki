@@ -16,11 +16,13 @@ The plugin inherents from uploadsingle assignment type. So it gets all its funct
   * Grade test cases separately. For example, there are four cases and max grade of each is 25. If one student pass three of them, he can get 75.
   * Teacher defined feedback/hint can be shown if someone doesn't pass the test.
   * Compile only mode.
+  * Rejudge all
   * Resubmit support. Allow to turn off.
   * More details (output and etc.) to teachers.
   * Highlight code preview
   * Translation: English and Simplified Chinese
   * Easy installation and no root required
+  * And all features inherited from moodle's standard assignment type: uploadsingle 
 
 
 = How to get =
