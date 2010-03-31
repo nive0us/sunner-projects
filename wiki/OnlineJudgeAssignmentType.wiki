@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This plugin is designed for courses involving programming. It can automatically grade programming assignments by testing the submissions by customizable test cases (ACM-ICPC style). Use [http://sourceforge.net/projects/libsandbox/ libsandbox] to filter malicious program. 
+This plugin is designed for courses involving programming. It can automatically grade programming assignments by testing the submissions by customizable test cases (ACM-ICPC style). Use sophisticated [http://sourceforge.net/projects/libsandbox/ libsandbox] to prevent attacks (e.g. rebooting system, accessing files/network, consuming/occupying system resources) from malicious submitted program. 
 
 Now, it supports C/C++, moodle 1.9.x and works in Linux only. 
 
