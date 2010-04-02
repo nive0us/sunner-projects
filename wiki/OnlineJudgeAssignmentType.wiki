@@ -31,7 +31,7 @@ See OnlineJudgeInstallation
 
 = TODO =
 
-  * Backup and restore. Now it can't backup the test cases and judge results
+  * Backup and restore. (Waiting for Moodle 2.0)
   * Java and more languages support
   * Better test case management UI
   * Code clean-up
