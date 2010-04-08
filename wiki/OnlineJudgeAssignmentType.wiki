@@ -1,9 +1,9 @@
-#summary Features of Online Judge Assignment Type for moodle
 #labels Featured,OnlineJudge
+ #summary Features of Online Judge Assignment Type for moodle
 
 = Introduction =
 
-This plugin is designed for courses involving programming. It can automatically grade programming assignments by testing the submissions by customizable test cases (ACM-ICPC style). Use sophisticated [http://sourceforge.net/projects/libsandbox/ libsandbox] to prevent attacks (e.g. rebooting system, accessing files/network, consuming/occupying system resources) from malicious submitted program. 
+This plugin is designed for courses involving programming. It can automatically grade programming assignments by testing the submissions by customizable test cases ([http://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest ACM-ICPC]/[http://en.wikipedia.org/wiki/Online_judge Online Judge] style). Use sophisticated [http://sourceforge.net/projects/libsandbox/ libsandbox] to prevent attacks (e.g. rebooting system, accessing files/network, consuming/occupying system resources) from malicious submitted source codes. 
 
 Now, it supports C/C++, moodle 1.9.x and works in Linux only. 
 
