@@ -1,9 +1,5 @@
-#summary How to get update notification
+#summary How to get help
 
-If you like these plugins, please send me an email. Then you can get notification of updates. I appreciate if you include the following information in the email:
+If you find bugs or have some suggestions, please submit them in issues.
 
-  * Your Name
-  * Name of your university/collage/institute/company
-  * Your feeling about the plugins
-
-Please send the email to sunner+moodle@gmail.com
+If you meet problems when using these plugins, please [https://groups.google.com/group/sunner-moodle-plugins/subscribe join the support group].
