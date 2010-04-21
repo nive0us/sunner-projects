@@ -1,5 +1,5 @@
+#summary Features of Online Judge Assignment Type for moodle
 #labels Featured,OnlineJudge
- #summary Features of Online Judge Assignment Type for moodle
 
 = Introduction =
 
