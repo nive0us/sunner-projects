@@ -2,4 +2,4 @@
 
 If you find bugs or have some suggestions, please submit them in issues.
 
-If you meet problems when using these plugins, please [https://groups.google.com/group/sunner-moodle-plugins/subscribe join the support group].
+If you meet problems when using these plugins, please [https://groups.google.com/group/sunner-moodle-plugins/subscribe join the support group] and search solutions or ask questions there.
