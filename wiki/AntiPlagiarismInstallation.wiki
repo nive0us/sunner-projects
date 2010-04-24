@@ -20,10 +20,10 @@ Download from http://code.google.com/p/sunner-projects/downloads/list
 
 Follow [http://theory.stanford.edu/~aiken/moss/ MOSS's instruction] to get the submission script and free account (the registration email must be sent in *PLAIN TEXT* format, otherwise moss won't reply). 
 
-== For Linux ==
+== For Linux users==
 Save the script and make sure it is runnable and works (the script has plenty of comments tell the usage). Go to moodle's admin->Modules->Blocks->Anti-Plagiarism and Input the full path (include file name).
 
-== For Windows ==
+== For Windows users ==
 First, you must install cygwin ([http://www.cygwin.com/]) and its perl packages which are required by moss.
 
 Second, save the moss script somewhere and name it moss.pl
