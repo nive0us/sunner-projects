@@ -1,5 +1,5 @@
 #summary Installation of onlinejudge assignment type for moodle
-#labels Featured,OnlineJudge
+#labels OnlineJudge
 
 = PREPARE =
 
