@@ -1,0 +1,15 @@
+#summary Information about hotquestion activity
+#labels Featured,hotquestion
+
+= Introduction =
+
+The first moodle activity for physical classroom. The idea comes from Purdue University's [http://www.itap.purdue.edu/tlt/hotseat/ hotseat].  
+
+This activity helps teachers to collect questions from students. Students can vote on others' question, so that we will know which are the hottest questions. Teachers can check and orally comment these questions before the end of the class.
+
+= Installation & Usage =
+
+ # Download hotquestion-x.x.tar.gz from [http://code.google.com/p/sunner-projects/downloads/list]. 
+ # Untar and put hotquestion/ into mod/ 
+ # Login moodle as admin and access http://you.site.root/admin/ to install
+ # Add this activity into your course page like other activities 
