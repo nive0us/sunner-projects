@@ -31,9 +31,9 @@ See OnlineJudgeInstallation
 
 = Credits =
 
-This plugin learned and copied much from arkaitz.garro(AT gmail.com)'s [http://cvs.moodle.org/contrib/plugins/mod/assignment/type/program/ program assignment type] which has stopped development since 2007. 
+This plugin learned and copied much from arkaitz.garro(AT gmail.com)'s [http://cvs.moodle.org/contrib/plugins/mod/assignment/type/program/ program (or called epaile) assignment type] which has stopped developing since 2007. 
 
-施兴 (paradisehit AT gmail.com) designed and implemented the prototype. 刘禹 (pineapple.liu@gmail.com）gave much help and suggests. 刘琦卿 contributed many code.
+施兴 (paradisehit AT gmail.com) designed and implemented the prototype. 刘禹 (pineapple.liu@gmail.com）gave much help and suggests. 刘琦卿 contributed many codes.
 
 = TODO =
 
