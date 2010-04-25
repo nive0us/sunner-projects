@@ -29,6 +29,12 @@ The plugin inherents from uploadsingle assignment type. So it gets all its funct
 
 See OnlineJudgeInstallation
 
+= Credits =
+
+This plugin learned and copied much from arkaitz.garro(AT gmail.com)'s [http://cvs.moodle.org/contrib/plugins/mod/assignment/type/program/ program assignment type] which has stopped development since 2007. 
+
+施兴 (paradisehit AT gmail.com) designed and implemented the prototype. 刘禹 (pineapple.liu@gmail.com）gave much help and suggests. 刘琦卿 contributed many code.
+
 = TODO =
 
   * Backup and restore. (Waiting for Moodle 2.0)
