@@ -31,6 +31,8 @@ See OnlineJudgeInstallation
 
 = Credits =
 
+This project is sponsored by [http://www.cs.hit.edu.cn School of Computer Science and Techonolgy], and [http://software.hit.edu.cn School of Software] in [http://www.hit.edu.cn HIT].
+
 This plugin learned and copied much from arkaitz.garro(AT gmail.com)'s [http://cvs.moodle.org/contrib/plugins/mod/assignment/type/program/ program (or called epaile) assignment type] which has stopped developing since 2007. 
 
 施兴 (paradisehit AT gmail.com) designed and implemented the prototype. 刘禹 (pineapple.liu@gmail.com）gave much help and suggests. 刘琦卿 contributed many codes.
