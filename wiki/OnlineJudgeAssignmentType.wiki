@@ -18,8 +18,8 @@ The plugin inherents from uploadsingle assignment type. So it gets all its funct
   * Compile only mode.
   * Rejudge all
   * Resubmit support. Allow to turn off.
-  * More details (output and etc.) to teachers.
-  * Highlight code preview
+  * More details (program output and etc.) to teachers.
+  * Highlight code preview (powered by [http://alexgorbatchev.com/wiki/SyntaxHighlighter SyntaxHighlighter])
   * Translation: English and Simplified Chinese
   * Easy installation and no root required
   * And all features inherited from moodle's standard assignment type: uploadsingle 
