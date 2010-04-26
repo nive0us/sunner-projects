@@ -13,3 +13,7 @@ This activity helps teachers to collect questions from students. Students can vo
  # Untar and put hotquestion/ into mod/ 
  # Login moodle as admin and access http://you.site.root/admin/ to install
  # Add this activity into your course page like other activities 
+
+= Credits =
+
+王国栋 implemented the prototype and contributed many codes.
