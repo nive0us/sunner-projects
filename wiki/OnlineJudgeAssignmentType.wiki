@@ -46,3 +46,7 @@ Other contributors:
   * Java and more languages support
   * Better test case management UI
   * Code clean-up
+
+= Screenshot =
+
+http://sunner-projects.googlecode.com/svn/trunk/screenshots/online_judge.jpg
