@@ -13,15 +13,15 @@ The plugin inherents from uploadsingle assignment type. So it gets all its funct
 
   * Judge in several minutes after submitting. (Depends on the frequency of [http://docs.moodle.org/en/Cron moodle cron job])
   * Support multiply test cases.
-  * Grade test cases separately. For example, there are four cases and max grade of each is 25. If one student pass three of them, he can get 75.
-  * Teacher defined feedback/hint can be shown if someone doesn't pass the test.
+  * Grade test cases separately. E.g., there are four cases and max grade of each is 25. The student pass three of them can get 25+25+25 = 75.
+  * Customized feedback/hint can be shown to who doesn't pass the test.
   * Compile only mode.
-  * Rejudge all
-  * Resubmit support. Allow to turn off.
-  * More details (program output and etc.) to teachers.
-  * Highlight code preview (powered by [http://alexgorbatchev.com/wiki/SyntaxHighlighter SyntaxHighlighter])
+  * Rejudge all anytime.
+  * Support resubmit many times and one time submit.
+  * More details (program output and etc.) can be shown to teachers.
+  * Highlight code preview (powered by [http://alexgorbatchev.com/wiki/SyntaxHighlighter SyntaxHighlighter]).
+  * Easy installation, no root required.
   * Translation: English and Simplified Chinese
-  * Easy installation and no root required
   * And all features inherited from moodle's standard assignment type: uploadsingle 
 
 
@@ -35,7 +35,10 @@ This project is sponsored by [http://www.cs.hit.edu.cn School of Computer Scienc
 
 This plugin learned and copied much from arkaitz.garro(AT gmail.com)'s [http://cvs.moodle.org/contrib/plugins/mod/assignment/type/program/ program (or called epaile) assignment type] which has stopped developing since 2007. 
 
-施兴 (paradisehit AT gmail.com) designed and implemented the prototype. 刘禹 (pineapple.liu@gmail.com）gave much help and suggests. 刘琦卿 contributed many codes.
+Other contributors:
+  * 施兴 (paradisehit AT gmail.com) designed and implemented the prototype. 
+  * 刘禹 (pineapple.liu@gmail.com）gave much help and suggests. 
+  * 刘琦卿 contributed many codes.
 
 = TODO =
 
