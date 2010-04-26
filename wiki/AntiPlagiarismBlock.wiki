@@ -30,3 +30,7 @@ See AntiPlagiarismInstallation
   * Better result view UI
   * online assignment type support
   * Code clean-up
+
+= Screenshot =
+
+http://sunner-projects.googlecode.com/svn/trunk/screenshots/anti-plagiarism.jpg
