@@ -1,7 +1,8 @@
 #summary How to install/upgrade onlinejudge assignment type for moodle
 #labels OnlineJudge
 
-= PREPARE =
+= Installation =
+== 1. Patch Moodle Official Code ==
 
 Edit mod/assignment/mod_form.php. Change
 {{{
@@ -12,24 +13,29 @@ to
 $assignmentinstance->setup_elements($mform, $this);
 }}}
 
-= DOWNLOAD =
+== 2. Download Online Judge==
 
 Download from http://code.google.com/p/sunner-projects/downloads/list
 
 Untar and put onlinejudge/ into mod/assignment/type/
 
-= MAKE sandbox =
+== 3. Make sandbox ==
 
 In mod/assignment/type/onlinejudge/sandbox/, run:
 {{{
 make
 }}}
 
-= Installation =
+== 4. Apply ==
 
   # Login moodle as admin
   # Access http://site.domain.name/admin/index.php
   # Follow the instructions shown by above url 
+
+= Upgrade =
+
+  # Overwrite the directory, onlinejudge/, with latest version.
+  # Repeat step 2-4 in Installation
 
 = Usage =
 
