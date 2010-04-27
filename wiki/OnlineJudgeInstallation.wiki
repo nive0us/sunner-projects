@@ -1,4 +1,4 @@
-#summary Installation of onlinejudge assignment type for moodle
+#summary How to install/upgrade onlinejudge assignment type for moodle
 #labels OnlineJudge
 
 = PREPARE =
