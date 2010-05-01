@@ -11,12 +11,12 @@ Now, it supports C/C++, moodle 1.9.x and works in Linux only.
 
 The plugin inherents from uploadsingle assignment type. So it gets all its functions and has additional features such as:
 
-  * Judge in several minutes after submitting. (Depends on the frequency of [http://docs.moodle.org/en/Cron moodle cron job])
+  * Different results (e.g. Accept, Wrong Answer, Presentation Error, Compilation Error, Time/Memory/Output Limit Exceed) get different grade. 
   * Support multiply test cases.
   * Grade test cases separately. E.g., there are four cases and max grade of each is 25. The student pass three of them can get 25+25+25 = 75.
   * Customized feedback/hint can be shown to who doesn't pass the test.
   * Compile only mode.
-  * Rejudge all anytime.
+  * Teachers can trigger rejudge of all submissions and grade manually anytime.
   * Support resubmit many times and one time submit.
   * More details (program output and etc.) can be shown to teachers.
   * Highlight code preview (powered by [http://alexgorbatchev.com/wiki/SyntaxHighlighter SyntaxHighlighter]).
@@ -37,7 +37,7 @@ This plugin learned and copied much from arkaitz.garro(AT gmail.com)'s [http://c
 
 Other contributors:
   * 施兴 (paradisehit AT gmail.com) designed and implemented the prototype. 
-  * 刘禹 (pineapple.liu@gmail.com）gave much help and suggests. 
+  * 刘禹 (pineapple.liu@gmail.com）gave much help and advices. 
   * 刘琦卿 contributed many codes.
 
 = TODO =
@@ -45,7 +45,6 @@ Other contributors:
   * Backup and restore. (Waiting for Moodle 2.0)
   * Java and more languages support
   * Better test case management UI
-  * Code clean-up
 
 = Screenshot =
 
