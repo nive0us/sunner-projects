@@ -92,7 +92,8 @@ That's all.
 
   # Overwrite the directory, onlinejudge/, with latest version.
   # Repeat step 2-4 in Installation
-  # If you are using 5.2 way, run `php -q /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php` again. 5.1 and 5.3 can apply the change automatically.
+  # If you are using 5.2 way, run `php -q /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php` again. 
+  # 5.1 and 5.3 can apply the upgrade automatically.
 
 = Usage =
 
