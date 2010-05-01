@@ -25,7 +25,7 @@ The plugin inherents from uploadsingle assignment type. So it gets all its funct
   * And all features inherited from moodle's standard assignment type: uploadsingle 
 
 
-= How to get =
+= How to get/use =
 
 See OnlineJudgeInstallation
 
