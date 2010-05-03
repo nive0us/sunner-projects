@@ -37,8 +37,8 @@ This plugin learned and copied much from arkaitz.garro(AT gmail.com)'s [http://c
 
 Other contributors:
   * 施兴 (paradisehit AT gmail.com) designed and implemented the prototype. 
-  * 刘禹 (pineapple.liu@gmail.com）gave much help and advices. 
-  * 刘琦卿 contributed many codes.
+  * 刘禹 (pineapple.liu AT gmail.com）gave much help and advices. 
+  * 刘琦卿 (lqq0205 AT foxmail.com) contributed many codes.
 
 = TODO =
 
