@@ -9,7 +9,7 @@ Now, it supports C/C++, moodle 1.9.x and works in Linux only. (Will support Wind
 
 = Features = 
 
-The plugin inherents from uploadsingle assignment type. So it gets all its functions and has additional features such as:
+This plugin inherent Moodle's standard assignment type, uploadsingle . So it gets all uploadsingle functions and has its own additional features:
 
   * Different results (e.g. Accept, Wrong Answer, Presentation Error, Compilation Error, Time/Memory/Output Limit Exceed) get different grade. 
   * Support multiply test cases.
@@ -22,8 +22,6 @@ The plugin inherents from uploadsingle assignment type. So it gets all its funct
   * Highlight code preview (powered by [http://alexgorbatchev.com/wiki/SyntaxHighlighter SyntaxHighlighter]).
   * Easy installation, no root required.
   * Translation: English and Simplified Chinese
-  * And all features inherited from moodle's standard assignment type: uploadsingle 
-
 
 = How to get/use =
 
