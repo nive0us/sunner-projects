@@ -1,5 +1,5 @@
 #summary Installation of anti_plagiarism block for moodle
-#labels anti-plagiarism
+#labels antiplagiarism
 
 = Requirement =
   * Moodle 1.9.x
