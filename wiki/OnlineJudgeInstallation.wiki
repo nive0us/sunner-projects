@@ -61,7 +61,7 @@ If you'd like or have to trigger cron through http, this is your best choice.
 In command line, run the following command to create daemon:
 
 {{{
-php -q /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php
+php /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php
 }}}
 
 Use
