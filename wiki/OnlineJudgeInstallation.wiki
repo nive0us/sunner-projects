@@ -38,21 +38,21 @@ This plug-in uses daemon or [http://docs.moodle.org/en/Cron moodle cron job] to 
 
 === 5.1. Create Judge Daemon Through Cron ===
 
-If you can setup your moodle's [http://docs.moodle.org/en/Cron cron job] be called by php cli, this is your best choice for convenience. That means in crontab, put a command which is similar with: 
+If you can setup your moodle's cron job to be called by php cli, this is your best choice for convenience. That means in crontab, put a command which is similar with: 
 
 {{{
 php -q /PATH/TO/MOODLE/admin/cron.php
 }}}
 
-That's all! The daemon will be created automatically. Use
+That's all! Read [http://docs.moodle.org/en/Cron] for detail about how to setup moodle cron job. 
+
+If cron job works, the judge daemon can be created automatically. Use
 
 {{{
 ps -FC php
 }}}
 
 to ensure the daemon is running.
-
-[http://docs.moodle.org/en/Cron] has more details about how to setup cron job.
 
 === 5.2. Create Judge Daemon in Command Line===
 
