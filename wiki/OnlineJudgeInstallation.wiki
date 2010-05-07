@@ -64,7 +64,7 @@ In command line, run the following command to create daemon:
 sudo -u APACHE-USER php /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php
 }}}
 
-The APACHE-USER means the username of apache in your system. In debian, it is www-data. _`ps aux|grep apache`_ or _`ps aux|grep httpd`_ can help you getting the correct username.
+The APACHE-USER means the username of apache in your system. It is _www-data_ in debian, _apache_ in fedora. _`ps aux|grep apache`_ or _`ps aux|grep httpd`_ can help you getting the correct username.
 
 Use
 
