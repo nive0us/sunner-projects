@@ -3,16 +3,14 @@
 
 = Introduction =
 
-This plugin is designed for courses involving programming. It can automatically grade programming assignments by testing the submissions by customizable test cases ([http://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest ACM-ICPC]/[http://en.wikipedia.org/wiki/Online_judge Online Judge] style). Use sophisticated [http://sourceforge.net/projects/libsandbox/ libsandbox] to prevent attacks (e.g. rebooting system, accessing files/network, consuming/occupying system resources) from malicious submitted source codes. 
-
-Now, it supports C/C++, moodle 1.9.x and works in Linux only. 
-
-_(Since onlinejudge 1.3 beta, Windows and about 40 programming languages are supported)_
-
+This plugin is designed for courses involving programming. It can automatically grade programming assignments by testing the submissions by customizable test cases ([http://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest ACM-ICPC]/[http://en.wikipedia.org/wiki/Online_judge Online Judge] style). 
 = Features = 
 
 This plugin inherent Moodle's standard assignment type, uploadsingle . So it gets all uploadsingle functions and has its own additional features:
 
+  * Support both Linux and Windows. But can't use local judge in Windows.
+  * Run C/C++ code under sophisticated [http://sourceforge.net/projects/libsandbox/ libsandbox] environment to prevent attacks (e.g. rebooting system, accessing files/network, consuming/occupying system resources). (Linux only)
+  * Run C/C++, Java, C#, Python, php, schema and other 30+ languages in [http://ideone.com]. It is safe and free.
   * Different results (e.g. Accept, Wrong Answer, Presentation Error, Compilation Error, Time/Memory/Output Limit Exceed) get different grade. 
   * Support multiply test cases.
   * Grade test cases separately. E.g., there are four cases and max grade of each is 25. The student pass three of them can get 25+25+25 = 75.
