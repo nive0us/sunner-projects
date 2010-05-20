@@ -41,7 +41,6 @@ Other contributors:
 = TODO =
 
   * Backup and restore. (Waiting for Moodle 2.0)
-  * Java and more languages support
   * Better test case management UI
 
 = Screenshot =
