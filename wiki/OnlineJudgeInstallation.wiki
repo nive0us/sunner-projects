@@ -81,8 +81,8 @@ You'd better to make the script as an autorun command through adding it into /et
 
   # Overwrite the directory, onlinejudge/, with latest version.
   # Repeat step 2-4 in Installation
-  # If you are using 5.2 way, run `sudo -u APACHE-USER php /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php` again. 
-  # 5.1 and 5.3 can apply the upgrade automatically.
+  # If you are using routine 5.2, run `sudo -u APACHE-USER php /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php` again. 
+  # Routine 5.1 can apply the upgrade automatically.
 
 = Usage =
 
