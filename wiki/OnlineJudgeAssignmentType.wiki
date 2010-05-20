@@ -5,7 +5,9 @@
 
 This plugin is designed for courses involving programming. It can automatically grade programming assignments by testing the submissions by customizable test cases ([http://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest ACM-ICPC]/[http://en.wikipedia.org/wiki/Online_judge Online Judge] style). Use sophisticated [http://sourceforge.net/projects/libsandbox/ libsandbox] to prevent attacks (e.g. rebooting system, accessing files/network, consuming/occupying system resources) from malicious submitted source codes. 
 
-Now, it supports C/C++, moodle 1.9.x and works in Linux only. (Will support Windows and many more programming languages in the next release)
+Now, it supports C/C++, moodle 1.9.x and works in Linux only. 
+
+_(Since onlinejudge 1.3 beta, Windows and about 40 programming languages are supported)_
 
 = Features = 
 
