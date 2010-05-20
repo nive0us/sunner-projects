@@ -34,19 +34,19 @@ make
 
 == 5. Make Judge Work==
 
-This plug-in uses daemon or [http://docs.moodle.org/en/Cron moodle cron job] to judge submissions. There are three different ways to make the judge work. The first is the most recommended and the last is the least recommended. 
+There are two recommended routines to make the judge work. The first is the most recommended.
 
 === 5.1. Create Judge Daemon Through Cron ===
 
-If you can setup your moodle's cron job to be called by php cli, this is your best choice for convenience. That means in crontab, put a command which is similar with: 
+Setup moodle's cron job to be called by php cli. In crontab, put a command which is similar with: 
 
 {{{
 php -q /PATH/TO/MOODLE/admin/cron.php
 }}}
 
-That's all! Read [http://docs.moodle.org/en/Cron] for detail about how to setup moodle cron job. 
+That's all! Read [http://docs.moodle.org/en/Cron] for detail about how to setup moodle cron job triggered by *php cli* (Not wget, curl and etc.). 
 
-If cron job works, the judge daemon can be created automatically. Use
+If it works, a judge daemon would be created. Use
 
 {{{
 ps -FC php
@@ -56,7 +56,7 @@ to ensure the daemon is running.
 
 === 5.2. Create Judge Daemon in Command Line===
 
-If you'd like or have to trigger cron through http, the way below is your best choice.
+If you can *NOT* trigger cron through php cli, use method below.
 
 In command line, run the following command to create daemon:
 
@@ -64,7 +64,7 @@ In command line, run the following command to create daemon:
 sudo -u APACHE-USER php /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php
 }}}
 
-The APACHE-USER means the username of apache in your system. It is _www-data_ in debian, _apache_ in fedora. _`ps aux|grep apache`_ or _`ps aux|grep httpd`_ can help you getting the correct username.
+The APACHE-USER means the username of apache in your system. It is _www-data_ in debian, _apache_ in fedora. Perhaps _`ps aux|grep apache`_ or _`ps aux|grep httpd`_ can help you getting the correct username.
 
 Use
 
@@ -76,19 +76,6 @@ to ensure the daemon is running.
 
 You'd better to make the script as an autorun command through adding it into /etc/rc.local or other ways. Please reference your system's manual for how to configure autorun command.
 
-=== 5.3. Judge Through Cron Job ===
-
-Well, in this way, there always is a delay between submitting and judge. Tell the students to be patient.
-
-First, make sure the [http://docs.moodle.org/en/Cron moodle cron job] works.
-
-In config.php, add the following line of code:
-
-{{{
-$CFG->assignment_oj_judge_in_cron = true;
-}}}
-
-That's all.
 
 = Upgrade =
 
