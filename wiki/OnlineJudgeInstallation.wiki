@@ -20,6 +20,7 @@ Download from http://code.google.com/p/sunner-projects/downloads/list
 Untar and put onlinejudge/ into mod/assignment/type/
 
 == 3. Make sandbox ==
+*_Only Linux users need do this step. Windows users skip to 4._*
 
 In mod/assignment/type/onlinejudge/sandbox/, run:
 {{{
@@ -34,9 +35,11 @@ make
 
 == 5. Make Judge Work==
 
-There are two recommended routines to make the judge work. The first is the most recommended.
+There are two recommended routines to make the judge work. The first is the most recommended but it works in Linux only. 
 
 === 5.1. Create Judge Daemon Through Cron ===
+
+*_(Linux only)_*
 
 Setup moodle's cron job to be called by php cli. In crontab, put a command which is similar with: 
 
@@ -56,9 +59,11 @@ to ensure the daemon is running.
 
 === 5.2. Create Judge Daemon in Command Line===
 
-If you can *NOT* trigger cron through php cli, use method below.
+If you can *NOT* trigger cron through php cli, then use this method.
 
-In command line, run the following command to create daemon:
+====In Linux====
+
+Run the following command to create judge daemon:
 
 {{{
 sudo -u APACHE-USER php /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php
@@ -74,8 +79,15 @@ ps -FC php
 
 to ensure the daemon is running.
 
-You'd better to make the script as an autorun command through adding it into /etc/rc.local or other ways. Please reference your system's manual for how to configure autorun command.
+====In Windows====
 
+Run the following command to create judge daemon:
+
+{{{
+C:\PHP\php \PATH\TO\MOODLE\mod\assignment\type\onlinejudge\judged.php
+}}}
+
+Make sure the current user has the permission to access moodle code and files in moodledata.
 
 = Upgrade =
 
