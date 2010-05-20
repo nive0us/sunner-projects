@@ -59,7 +59,7 @@ to ensure the daemon is running.
 
 === 5.2. Create Judge Daemon in Command Line===
 
-If you can *NOT* trigger cron through php cli, then use this method.
+If you can *NOT* trigger cron through php cli or use Windows, then use this method.
 
 ====In Linux====
 
