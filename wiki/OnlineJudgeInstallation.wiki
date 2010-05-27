@@ -84,7 +84,7 @@ to ensure the daemon is running.
 Run the following command to create judge daemon:
 
 {{{
-C:\PHP\php \PATH\TO\MOODLE\mod\assignment\type\onlinejudge\judged.php
+C:\PHP\php.exe \PATH\TO\MOODLE\mod\assignment\type\onlinejudge\judged.php
 }}}
 
 Make sure the current user has the permission to access moodle code and files in moodledata.
