@@ -33,7 +33,7 @@ make
 *_Windows users must do this step. Linux users need do this step only if they want to use ideone.com. _*
 
  # register here: http://ideone.com/account/register 
- # After activation, login and set API password here: http://ideone.com/account/ 
+ # After activation, login and set *API password* here: http://ideone.com/account/ 
  # Open config.php and add the following lines: 
 {{{
 $CFG->assignment_oj_ideone_username = 'change_me_to_ideone_username'; 
