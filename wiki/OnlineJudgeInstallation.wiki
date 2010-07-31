@@ -2,25 +2,14 @@
 #labels OnlineJudge
 
 = Installation =
-== 1. Patch Moodle Official Code ==
-
-Edit mod/assignment/mod_form.php. Change
-{{{
-$assignmentinstance->setup_elements($mform);
-}}}
-to
-{{{
-$assignmentinstance->setup_elements($mform, $this);
-}}}
-
-== 2. Download Online Judge==
+== 1. Download Online Judge==
 
 Download from http://code.google.com/p/sunner-projects/downloads/list
 
 Untar and put onlinejudge/ into mod/assignment/type/
 
-== 3. Make sandbox ==
-*_Only Linux users need do this step. Windows users skip to 4._*
+== 2. Make sandbox ==
+*_Only Linux users need do this step. Windows users skip to next step._*
 
 Requirement: Linux 2.6.x, gcc 4.x and make
 
@@ -29,7 +18,7 @@ In mod/assignment/type/onlinejudge/sandbox/, run:
 make
 }}}
 
-== 4. Configure ==
+== 3. Configure ==
 *_Windows users must do this step. Linux users need do this step only if they want to use ideone.com. _*
 
  # register here: http://ideone.com/account/register 
@@ -39,7 +28,7 @@ make
 $CFG->assignment_oj_ideone_username = 'change_me_to_ideone_username'; 
 $CFG->assignment_oj_ideone_password = 'change_me_to_ideone_api_password'; 
 }}}
-== 5. Apply ==
+== 4. Apply ==
 
   # Login moodle as admin
   # Access http://site.domain.name/admin/index.php
