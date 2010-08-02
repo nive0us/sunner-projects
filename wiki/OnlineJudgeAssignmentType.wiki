@@ -9,8 +9,8 @@ This plugin is designed for courses involving programming. It can automatically 
 This plugin inherent Moodle's standard assignment type, uploadsingle . So it gets all uploadsingle functions and has its own additional features:
 
   * Support both Linux and Windows.
-  * Run C/C++ code locally under sophisticated [http://sourceforge.net/projects/libsandbox/ libsandbox] environment to prevent attacks (e.g. rebooting system, accessing files/network, consuming/occupying system resources). (Linux only)
-  * Run C/C++, Java, C#, Python, php, schema and other 40+ languages remotely in [http://ideone.com]. It is safe and free.
+  * Run C/C++ code locally in sophisticated [http://sourceforge.net/projects/libsandbox/ libsandbox] environment to prevent attacks (e.g. rebooting system, accessing files/network, consuming/occupying system resources). (Linux only)
+  * Run C/C++, Java, C#, Python, php, schema and other 40+ languages remotely in [http://ideone.com]. It is safe and free. See [http://ideone.com/faq] for full list of supported languages.
   * Different results (e.g. Accept, Wrong Answer, Presentation Error, Compilation Error, Time/Memory/Output Limit Exceed) get different grade. 
   * Support multiply test cases.
   * Grade test cases separately. E.g., there are four cases and max grade of each is 25. The student pass three of them can get 25+25+25 = 75.
