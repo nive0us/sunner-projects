@@ -1,0 +1,17 @@
+#summary FAQ of Online Judge Assignment Type
+#labels onlinejudge
+
+= Why a simple program gets the result: restricted function =
+
+{{{
+cd /path/to/moodle/mod/assignment/type/onlinejudge/
+./languages/c.sh simple.c a.out   #use ./languages/cpp.sh for C++ code
+./sandbox/sand a.out              # Your program will run or be broken by sandbox
+echo $?
+}}}
+
+If the last command output 2, run your program as:
+
+`strace ./a.out`
+
+Send the output of all the above commands to sunner@gmail.com
