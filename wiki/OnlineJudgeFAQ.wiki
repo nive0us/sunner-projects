@@ -12,6 +12,8 @@ echo $?
 
 If the last command output 2, run your program as:
 
-`strace ./a.out`
+{{{
+strace ./a.out
+}}}
 
 Send the output of all the above commands to sunner@gmail.com
