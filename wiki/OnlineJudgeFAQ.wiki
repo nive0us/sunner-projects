@@ -4,6 +4,8 @@
 = Why a simple program gets the result: restricted function =
 
 {{{
+uname -a
+gcc -v
 cd /path/to/moodle/mod/assignment/type/onlinejudge/
 ./languages/c.sh simple.c a.out   #use ./languages/cpp.sh for C++ code
 ./sandbox/sand a.out              # Your program will run or be broken by sandbox
