@@ -18,4 +18,4 @@ If the last command output 2, run your program as:
 strace ./a.out
 }}}
 
-Send the output of all the above commands to sunner@gmail.com
+Send simple.c, a.out and the output of all the above commands to sunner@gmail.com . I can make a special patch for your system.
