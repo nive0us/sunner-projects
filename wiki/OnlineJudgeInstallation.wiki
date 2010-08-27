@@ -94,8 +94,8 @@ Make sure the current user has the permission to access moodle code and files in
 
   # Overwrite the directory, onlinejudge/, with latest version.
   # Repeat step 2-4 in Installation
-  # If you are using routine 5.2, run `sudo -u APACHE-USER php /PATH/TO/MOODLE/mod/assignment/type/onlinejudge/judged.php` again. 
   # Routine 5.1 can apply the upgrade automatically.
+  # If you are using routine 5.2, kill the existing daemon and do the routine again. 
 
 = Usage =
 
