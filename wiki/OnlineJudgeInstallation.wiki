@@ -103,4 +103,4 @@ The same as other standard assignment types. Follow its inline help.
 
 = FAQ =
 
-See OnlineJudgeFAQ
+See [OnlineJudgeFAQ]
