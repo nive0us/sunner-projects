@@ -9,7 +9,7 @@ Download from http://code.google.com/p/sunner-projects/downloads/list
 Untar and put onlinejudge/ into mod/assignment/type/
 
 == 2. Make sandbox ==
-*_Only Linux users need do this step. Windows users skip to next step._*
+*_Only Linux users need to do this step. Windows users skip to next step._*
 
 Requirement: Linux 2.6.x, gcc 4.x and make
 
@@ -19,7 +19,7 @@ make
 }}}
 
 == 3. Configure ==
-*_Windows users must do this step. Linux users need do this step only if they want to use ideone.com. _*
+*_Users who want to use ideone.com should do this step. Windows users must use ideone.com_*
 
  # register here: http://ideone.com/account/register 
  # After activation, login and set *API password* here: http://ideone.com/account/ 
