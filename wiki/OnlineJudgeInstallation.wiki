@@ -21,6 +21,8 @@ make
 == 3. Configure ==
 *_Users who want to use ideone.com should do this step. Windows users must use ideone.com_*
 
+Requirement: php with soap module
+
  # register here: http://ideone.com/account/register 
  # After activation, login and set *API password* here: http://ideone.com/account/ 
  # Open config.php and add the following lines: 
