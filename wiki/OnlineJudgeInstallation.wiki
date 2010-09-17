@@ -28,7 +28,7 @@ Requirement: php with soap module
  # Open config.php and add the following lines: 
 {{{
 $CFG->assignment_oj_ideone_username = 'change_me_to_ideone_username'; 
-$CFG->assignment_oj_ideone_password = 'change_me_to_ideone_api_password'; 
+$CFG->assignment_oj_ideone_password = 'change_me_to_ideone_API_password'; 
 }}}
 == 4. Apply ==
 
