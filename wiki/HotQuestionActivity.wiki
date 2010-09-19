@@ -14,6 +14,10 @@ In classroom, students post questions into Hot Question activity from notebook, 
  # Login moodle as admin and access http://you.site.root/admin/ to install
  # Add this activity into your course page like other activities 
 
+= Screenshot =
+
+http://sunner-projects.googlecode.com/svn/trunk/screenshots/HotQuestion.jpg
+
 = Credits =
 
 王国栋 implemented the prototype and contributed many codes.
