@@ -5,7 +5,7 @@
 
 The first moodle activity for physical classroom. The idea comes from Purdue University's [http://www.itap.purdue.edu/tlt/hotseat/ hotseat].  
 
-In classroom, students post questions into hotquestion from notebook, netbook, android, iPhone, iPod Touch and other gears which can access the moodle site. Students can also vote on others' questions, so that the hottest questions will be popped up. Teachers can check and make orally comments on selected questions before the end of the class.
+In classroom, students post questions into Hot Question activity from notebook, netbook, android, iPhone, iPod Touch and other gears which can access the moodle site. Students can also vote on others' questions, so that the hottest questions will be popped up. Teachers can check and make orally comments on selected questions before the end of the class.
 
 = Installation & Usage =
 
