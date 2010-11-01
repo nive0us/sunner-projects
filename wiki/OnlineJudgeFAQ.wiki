@@ -3,6 +3,12 @@
 
 = Why a simple program gets the result: restricted function =
 
+In the installation step 2, make sandbox, use "make policy1" instead of "make" and resubmit the assignment.
+
+If the problem is still there, use "make policy2" and resubmit.
+
+If the problem is still there, do the following:
+
 {{{
 uname -a
 gcc -v
@@ -12,7 +18,7 @@ cd /path/to/moodle/mod/assignment/type/onlinejudge/
 echo $?
 }}}
 
-If the last command output 2, run your program as:
+Ensure that the last command output 2, run your program as:
 
 {{{
 strace ./a.out
@@ -21,5 +27,5 @@ strace ./a.out
 Send simple.c, a.out and the output of all the above commands to sunner@gmail.com . I can make a special patch for your system.
 
 = Why pending forever =
-
-Check your PHP log (default in syslog or Windows NT events log) for details.
+ # Check whether the judge daemon is running. The process's name should be php or php.exe
+ # If the daemon quits by itself, check your PHP log (default to syslog or Windows NT events log) for detail error messages.
