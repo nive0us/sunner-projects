@@ -1,6 +1,5 @@
 #summary FAQ of Online Judge Assignment Type
 #labels onlinejudge
-
 = Why a simple program gets the result: restricted function =
 
 In the installation step 2, make sandbox, use "make policy1" instead of "make" and resubmit the assignment.
@@ -29,3 +28,18 @@ Send simple.c, a.out and the output of all the above commands to sunner@gmail.co
 = Why pending forever =
  # Check whether the judge daemon is running. The process's name should be php or php.exe
  # If the daemon quits by itself, check your PHP log (default to syslog or Windows NT events log) for detail error messages.
+
+
+= What the difference between local sandbox and ideone.com =
+
+OJ currently supports two kinds of judge engine: local sandbox and ideone.com. The following table describes the difference.
+
+||*Judge*||*Supported OSes*||*Internet*||*Speed*||*Languages*||*Limits*||*Safe*||
+||Local sandbox||Linux only||Not required||Depends on your server load. Normally faster than ideone.com||C/C++ only||No||Yes, but it depends on the sandbox||
+||ideone.com||Linux & Windows||Required||Depends on the internet conection and ideone.com's load.||40+||1000 submissions/month||Sure, no submissions will be executed on your server||
+
+= What the difference between Linux and Windows for OJ =
+
+Since the developers are using Linux, OJ supports Linux better. We did only a few testing under Windows.
+
+And, Windows doesn't support all the functions we provided. See [OnlineJudgeFAQ#What_the_difference_between_local_sandbox_and_ideone.com] for details.
