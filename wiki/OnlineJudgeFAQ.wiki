@@ -42,4 +42,4 @@ OJ currently supports two kinds of judge engine: local sandbox and ideone.com. T
 
 Since the developers are using Linux, OJ supports Linux better. We did only a few testing under Windows.
 
-And, Windows doesn't support all the functions we provided. See [OnlineJudgeFAQ#What_the_difference_between_local_sandbox_and_ideone.com] for details.
+And, Windows doesn't support all the features we provide. See [OnlineJudgeFAQ#What_the_difference_between_local_sandbox_and_ideone.com] for details.
