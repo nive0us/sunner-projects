@@ -1,6 +1,8 @@
 #summary Features of Online Judge Assignment Type for moodle
 #labels Featured,OnlineJudge
 
+*_This page is out of date. For latest info click [https://github.com/hit-moodle/onlinejudge/wiki] _*
+
 = Introduction =
 
 This plugin is designed for courses involving programming. It can automatically grade programming assignments by testing the submissions by customizable test cases ([http://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest ACM-ICPC]/[http://en.wikipedia.org/wiki/Online_judge Online Judge] style). 
