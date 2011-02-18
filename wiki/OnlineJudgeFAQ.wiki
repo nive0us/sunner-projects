@@ -1,5 +1,8 @@
 #summary FAQ of Online Judge Assignment Type
 #labels onlinejudge
+
+*_This page is out of date. For latest info click [https://github.com/hit-moodle/onlinejudge/wiki] _*
+
 = Why a simple program gets the result: restricted function =
 
 In the installation step 2, make sandbox, use "make policy1" instead of "make" and resubmit the assignment.
