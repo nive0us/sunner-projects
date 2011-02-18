@@ -1,6 +1,8 @@
 #summary How to install/upgrade/use onlinejudge assignment type for moodle
 #labels OnlineJudge
 
+*_This page is out of date. For latest info click [https://github.com/hit-moodle/onlinejudge/wiki] _*
+
 = Installation =
 == 1. Download Online Judge==
 
