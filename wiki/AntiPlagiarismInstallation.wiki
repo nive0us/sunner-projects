@@ -1,6 +1,8 @@
 #summary Installation of anti_plagiarism block for moodle
 #labels antiplagiarism
 
+*_ This page is obsolete. Latest version is at https://github.com/hit-moodle/anti_plagiarism/wiki _*
+
 = Requirement =
   * Moodle 1.9.x
   * perl in Linux or cygwin in Windows
