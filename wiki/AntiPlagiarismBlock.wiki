@@ -1,6 +1,8 @@
 #summary Anti-plagiarism for moodle's assignment
 #labels Featured,antiplagiarism
 
+*_ This page is obsolete. Latest version is at https://github.com/hit-moodle/anti_plagiarism/wiki _*
+
 = Introduction =
 
 This plugin works as a block. It can detect cheating in programming assignments. Also support html and plain text files. The core engine is [http://theory.stanford.edu/~aiken/moss/ MOSS].
