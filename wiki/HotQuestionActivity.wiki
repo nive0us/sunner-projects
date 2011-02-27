@@ -1,6 +1,8 @@
 #summary help teachers to collect questions from students in or out of classroom
 #labels Featured,hotquestion
 
+*_This page is obsolete. Latest version is at https://github.com/hit-moodle/moodle-mod_hotquestion/wiki_*
+
 = Introduction =
 
 The first moodle activity for physical classroom. The idea comes from Purdue University's [http://www.itap.purdue.edu/tlt/hotseat/ hotseat].  
